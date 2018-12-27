@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.project.pung.submdicoding.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+            <de.hdodenhof.circleimageview.CircleImageView
+               style="@style/ImageSpec"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_item_photo"/>
+            <TextView
+                style="@style/Nama"
+                android:id="@+id/t_nama"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:text="@string/nama"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+        <TextView
+           style="@style/TextContent.Black"
+            android:text="Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        <TextView
+            android:id="@+id/t_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:lineSpacingMultiplier="1"
+            android:textColor="@android:color/black"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
